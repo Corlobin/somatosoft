@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Somatosoft</string>
+    <string name="title_activity_register_screen">RegisterScreen</string>
+</resources>
