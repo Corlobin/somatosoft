@@ -1,7 +1,8 @@
 package ppgee.ufes.com.somatosoft;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterScreen extends AppCompatActivity {
 
