@@ -8,8 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".FrontImageScreen">
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <activity android:name=".HomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,9 +17,41 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".FrontImageScreen"
+            android:parentActivityName=".HomeScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeScreen" />
+        </activity>
+        <activity
             android:name=".RegisterScreen"
-            android:label="@string/title_activity_register_screen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:parentActivityName=".HomeScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeScreen" />
+        </activity>
+        <activity
+            android:name=".SideImageScreen"
+            android:parentActivityName=".FrontImageScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FrontImageScreen" />
+        </activity>
+        <activity
+            android:name=".UserDataScreen"
+            android:parentActivityName=".SideImageScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SideImageScreen" />
+        </activity>
     </application>
 
 </manifest>

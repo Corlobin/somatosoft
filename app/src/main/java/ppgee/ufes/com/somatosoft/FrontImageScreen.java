@@ -5,9 +5,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +14,8 @@ import androidx.core.app.ActivityCompat;
 
 public class FrontImageScreen extends AppCompatActivity {
     ImageView imageView;
+    Button nextButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,14 +26,17 @@ public class FrontImageScreen extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 0);
         }
 
-        imageView = (ImageView) findViewById(R.id.imageViewFront);
-        imageView.setImageResource(R.drawable.exemplo);
-        findViewById(R.id.btPicture).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                takePicture();
-                System.out.println("aaaaaaaa2");
-            }
+        imageView = findViewById(R.id.imageViewFront);
+        imageView.setImageResource(R.drawable.exemplo_de_frente);
+        findViewById(R.id.btPicture).setOnClickListener($ -> {
+            takePicture();
+            System.out.println("aaaaaaaa2");
+        });
+
+        nextButton = findViewById(R.id.btNext);
+        nextButton.setOnClickListener($ -> {
+            Intent intent = new Intent(FrontImageScreen.this, SideImageScreen.class);
+            FrontImageScreen.this.startActivity(intent);
         });
     }
 
@@ -42,7 +46,7 @@ public class FrontImageScreen extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 1 && resultCode == RESULT_OK) {
             Bundle bundle = data.getExtras();
             Bitmap image = (Bitmap) bundle.get("data");
