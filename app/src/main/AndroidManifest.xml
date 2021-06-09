@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ppgee.ufes.com.somatosoft">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        tools:replace="android:theme"
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+        <activity android:name=".view.HomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.image.FrontImageScreen"
+            android:parentActivityName=".view.HomeScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".view.RegisterScreen"
+            android:parentActivityName=".view.HomeScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".view.image.SideImageScreen"
+            android:parentActivityName=".view.image.FrontImageScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.image.FrontImageScreen" />
+        </activity>
+        <activity
+            android:name=".view.form.PageOneUserData"
+            android:parentActivityName=".view.image.SideImageScreen">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.image.SideImageScreen" />
+        </activity>
+        <activity
+            android:name=".view.form.PageTwoUserData"
+            android:parentActivityName=".view.form.PageOneUserData">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.form.PageOneUserData" />
+        </activity>
+        <activity
+            android:name=".view.form.PageThreeUserData"
+            android:parentActivityName=".view.form.PageTwoUserData">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.form.PageTwoUserData" />
+        </activity>
+        <activity
+            android:name=".view.form.ResultCalculusUserData"
+            android:parentActivityName=".view.form.PageThreeUserData">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.form.PageThreeUserData" />
+        </activity>
+
+        <provider
+            android:authorities="ppgee.ufes.com.somatosoft.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name="net.rdrei.android.dirchooser.DirectoryChooserActivity" />
+    </application>
+
+</manifest>

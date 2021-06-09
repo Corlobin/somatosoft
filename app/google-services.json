@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "566520119693",
+    "firebase_url": "https://doutoradoapp.firebaseio.com",
+    "project_id": "doutoradoapp",
+    "storage_bucket": "doutoradoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566520119693:android:ce4491fdebf9df598b7dc4",
+        "android_client_info": {
+          "package_name": "ppgee.ufes.com.somatosoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566520119693-nnft9jf2q4mua1nbli3nv7s1j6n42q93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ppgee.ufes.com.somatosoft",
+            "certificate_hash": "a3c83534c06ade80f87cdb303761eda9748a3850"
+          }
+        },
+        {
+          "client_id": "566520119693-g9kcsfukkgskfk4pvoainuev05tkhgrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6WkufLwzghWva4V6SAkcLGKynyT1fYsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566520119693-g9kcsfukkgskfk4pvoainuev05tkhgrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

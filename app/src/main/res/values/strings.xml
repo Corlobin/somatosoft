@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Somatosoft</string>
+    <string name="title_activity_register_screen">RegisterScreen</string>
+    <string name="title_activity_side_image_screen">SideImageScreen</string>
+    <string name="title_activity_user_data_screen">UserDataScreen</string>
+    <string name="m_todo_heart_carter_1_3">Método Heath-Carter (1/3)</string>
+    <string name="m_todo_heart_carter_2_3">Método Heath-Carter (2/3)</string>
+    <string name="m_todo_heart_carter_3_3">Método Heath-Carter (3/3)</string>
+    <string name="estatura_em_extens_o_m_xima">Estatura </string>
+    <string name="massa_corporal">Massa corporal</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="sexo">Sexo</string>
+    <string name="prx_page">Próxima página</string>
+    <string name="dobra_cut_nea_panturrilha_medial">Dobra cutânea panturrilha medial</string>
+    <string name="dobra_cut_nea_subescapular">Dobra cutânea subescapular</string>
+    <string name="dobra_cut_nea_supra_espinhal">Dobra cutânea supra espinhal</string>
+    <string name="dobra_cut_nea_de_tr_ceps">Dobra cutânea de tríceps</string>
+    <string name="calcular">Calcular</string>
+    <string name="per_metro_de_panturrilha">Perímetro de panturrilha</string>
+    <string name="per_metro_de_bra_o_flexionado_em_contra_o_m_xima">Perímetro de braço flexionado em contração máxima</string>
+    <string name="di_metro_sseo_bi_epicondilar_de_f_mur">Diâmetro ósseo bi-epicondilar de fêmur</string>
+    <string name="di_metro_sseo_bi_epicondilar_de_mero">Diâmetro ósseo bi-epicondilar de úmero</string>
+    <string name="usu_rio">Nome do avaliador</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="comorbidades">Comorbidades</string>
+    <string name="comorbidade_diab_tes_i_ou_ii">Diabétes I ou II</string>
+    <string name="obesidade">Obesidade</string>
+    <string name="hipertens_o">Hipertensão</string>
+    <string name="cardiopatia">Cardiopatia</string>
+    <string name="covid">COVID</string>
+    <string name="sim">Sim</string>
+    <string name="n_o">Não</string>
+</resources>

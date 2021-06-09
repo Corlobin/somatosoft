@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.form.PageTwoUserData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/m_todo_heart_carter_2_3"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlDobCutTri"
+                style="@style/TextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextInputEditTextStyle"
+                    android:hint="@string/dobra_cut_nea_de_tr_ceps" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlDobCutSup"
+                style="@style/TextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextInputEditTextStyle"
+                    android:hint="@string/dobra_cut_nea_supra_espinhal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlDobCutSub"
+                style="@style/TextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextInputEditTextStyle"
+                    android:hint="@string/dobra_cut_nea_subescapular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlDobCutPantMed"
+                style="@style/TextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextInputEditTextStyle"
+                    android:hint="@string/dobra_cut_nea_panturrilha_medial" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="@string/prx_page"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
